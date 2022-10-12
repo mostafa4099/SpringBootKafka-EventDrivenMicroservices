@@ -1,0 +1,16 @@
+1. Download apache kafka from official site
+2. Extract the tar file
+3. Go to the extracted folder
+4. Run following command (for windows) to start zookeeper server:
+      .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+5. Run following command (for windows) to start kafka server:
+         .\bin\windows\kafka-server-start.bat .\config\server.properties
+6. To create topic run following command:
+        .\bin\windows\kafka-topics.bat --create --topic firstTopic --bootstrap-server localhost:9092
+firstTopic is newly created topic name.
+7. To produce event run following command:
+        .\bin\windows\kafka-console-producer.bat --topic firstTopic --bootstrap-server localhost:9092
+Insert events as per as you need. Press ctrl+c to exit.
+8. To consume produced events run following command:
+        .\bin\windows\kafka-console-consumer.bat --topic firstTopic --from-beginning --bootstrap-server localhost:9092
+Will return all produced events. Press ctrl+c to exit.
