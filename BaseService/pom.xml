@@ -6,18 +6,10 @@
         <groupId>com.mostafa</groupId>
         <artifactId>SpringBootKafka-EventDrivenMicroservices</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
-    <artifactId>OrderProducerService</artifactId>
+    <artifactId>BaseService</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>OrderProducerService</name>
-    <description>OrderProducerService</description>
-    <packaging>jar</packaging>
-    <dependencies>
-        <dependency>
-            <groupId>com.mostafa</groupId>
-            <artifactId>BaseService</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+    <name>BaseService</name>
+    <description>BaseService</description>
 </project>
